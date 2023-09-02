@@ -3,10 +3,68 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/9835f5b7d9.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="styles.css" />
 		<title>Custom To-Do App</title>
 	</head>
 	<body>
+		<div class="app">
+			<div class="form-container">
+				<header class="form-container__header">Add new task</header>
+				<form>
+					<input type="text" class="form-container__task" id="task" name="task" placeholder="Enter task ..." />
+					<p class="choose-prioriy-label">Choose priority:</p>
+					<ul class="form-container__priority">
+						<li class="form-container__priority__high">High</li>
+						<li class="form-container__priority__medium">Medium</li>
+						<li class="form-container__priority__low">Low</li>
+					</ul>
+					<input class="form-container__submit" type="submit" value="Add new task" />
+				</form>
+			</div>
+
+			<br />
+
+			<div class="task-container">
+				<header class="task-container__header">
+					<p class="task-container__header__task-name">Task name</p>
+					<p class="task-container__header__priority">Priority</p>
+					<p class="task-container__header__done">Done</p>
+					<p class="task-container__header__bin">Delete</p>
+				</header>
+
+				<ul class="task-container__task-list">
+					<li class="task-container__task-list__task-name">
+						<span>Test</span>
+					</li>
+					<li class="task-container__task-list__priority">
+						<span>Test</span>
+					</li>
+					<li class="task-container__task-list__done">
+						<span>Test</span>
+					</li>
+					<li class="task-container__task-list__bin"></li>
+					<i class="fa-solid fa-trash" style="color: #1d1d1b"></i>
+				</ul>
+			</div>
+
+			<footer class="footer">
+				<div class="footer-container">
+					<p class="footer-container__title">Rows per page:</p>
+					<select class="footer-container__rows-per-page-selector">
+						Rows per page
+					</select>
+					<p class="footer-container__page-number">0 - 5 of 1</p>
+					<button class="footer-container__arrow-left">
+						<i class="fa-solid fa-angle-left" style="color: #1d1d1b"></i>
+					</button>
+					<button class="footer-container__arrow-right">
+						<i class="fa-sharp fa-solid fa-angle-right" style="color: #1d1d1b"></i>
+					</button>
+				</div>
+			</footer>
+		</div>
+
 		<script src="todos.js"></script>
 	</body>
 </html>
