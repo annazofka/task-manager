@@ -3,6 +3,9 @@
 	--dark-blue: #015e69;
 	--white: #ffffff;
 	--black: #1d1d1b;
+	--red: #e55d4b;
+	--yellow: #e8bc5b;
+	--green: #849a74;
 }
 
 * {
@@ -11,6 +14,7 @@
 	box-sizing: border-box;
 	color: var(--black);
 	font-family: 'Times New Roman';
+	font-size: medium;
 }
 
 body {
@@ -44,7 +48,9 @@ body {
 	display: block;
 	margin: 1em auto;
 	padding: 1em;
-	width: 18em;
+	width: 16em;
+	border: 0.1em solid var(--black);
+	border-radius: 0.4em;
 }
 
 ul {
@@ -56,11 +62,52 @@ ul {
 .choose-prioriy-label {
 	text-align: center;
 	margin-bottom: 1em;
+	font-weight: 700;
+	text-decoration: var(--blue) underline;
 }
 
-.form-container__priority {
+.choose-priority {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+}
+
+.choose-priority__high {
+	background-color: var(--red);
+	color: var(--white);
+	border: none;
+	border-radius: 0.2em;
+	padding: 0.25em 0.75em;
+	width: 4.5em;
+}
+.choose-priority__high:active {
+	color: var(--black);
+	font-weight: bold;
+}
+
+.choose-priority__medium {
+	background-color: var(--yellow);
+	color: var(--white);
+	border: none;
+	border-radius: 0.2em;
+	padding: 0.25em 0.75em;
+	width: 4.5em;
+}
+.choose-priority__medium:active {
+	color: var(--black);
+	font-weight: bold;
+}
+
+.choose-priority__low {
+	background-color: var(--green);
+	color: var(--white);
+	border: none;
+	border-radius: 0.2em;
+	padding: 0.25em 0.75em;
+	width: 4.5em;
+}
+.choose-priority__low:active {
+	color: var(--black);
+	font-weight: bold;
 }
 
 .form-container__submit {
@@ -93,16 +140,18 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* flex: 1 2 auto; */
+	flex: 1 0 21%;
 }
 
 .table-row__header {
-	display: flex;
+	display: inline-block;
 	flex-direction: row;
 	justify-content: space-between;
 	min-width: 100%;
 	background-color: var(--blue);
-	padding: 0.4em;
+	padding: 0.6em;
+	font-size: large;
+	font-weight: 600;
 }
 
 .table-row__header p {
@@ -112,9 +161,9 @@ ul {
 }
 
 .table-row__task-list {
-	display: flex;
+	/* display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-between; */
 	min-width: 100%;
 }
 .table-row__task-list p {

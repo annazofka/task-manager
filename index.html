@@ -11,14 +11,14 @@
 		<div class="app">
 			<div class="form-container">
 				<header class="form-container__header">Add new task</header>
-				<form class="add">
+				<form id="add" name="add">
 					<input class="form-container__task" type="text" id="newTask" name="newTask" placeholder="Enter task ..." />
 					<p class="choose-prioriy-label">Choose priority:</p>
-					<ul class="form-container__priority">
-						<li class="form-container__priority__high">High</li>
-						<li class="form-container__priority__medium">Medium</li>
-						<li class="form-container__priority__low">Low</li>
-					</ul>
+					<div class="choose-priority" id="choose-priority" name="" choose-priority>
+						<button class="choose-priority__high" id="high" name="high">High</button>
+						<button class="choose-priority__medium" id="medium" name="medium">Medium</button>
+						<button class="choose-priority__low" id="low" name="low">Low</button>
+					</div>
 					<input class="form-container__submit" type="submit" value="Add new task" />
 				</form>
 			</div>
@@ -34,13 +34,11 @@
 					<!-- </header> -->
 				</li>
 
-				<li class="table-row__task-list">
-					<p class="table-row__task-list__task-name">Test task</p>
+				<li class="table-row__task-list" id="task-list" name="task-list">
+					<p class="table-row__task-list__task-name">Example task</p>
 					<p class="table-row__task-list__priority">Medium</p>
 					<p class="table-row__task-list__done">Done</p>
-					<p class="table-row__task-list__bin">
-						<i class="fa-solid fa-trash" style="color: #1d1d1b"></i>
-					</p>
+					<i class="fa-solid fa-trash delete" style="color: #1d1d1b"></i>
 				</li>
 			</ul>
 
