@@ -15,31 +15,32 @@
 					<input class="form-container__task" type="text" id="newTask" name="newTask" placeholder="Enter task ..." />
 					<p class="choose-prioriy-label">Choose priority:</p>
 					<div class="choose-priority" id="choose-priority" name="" choose-priority>
-						<button class="choose-priority__high" id="high" name="high">High</button>
-						<button class="choose-priority__medium" id="medium" name="medium">Medium</button>
-						<button class="choose-priority__low" id="low" name="low">Low</button>
+						<button type="button" class="priority__high" id="high" name="high">High</button>
+						<button type="button" class="priority__medium" id="medium" name="medium">Medium</button>
+						<button type="button" class="priority__low" id="low" name="low">Low</button>
 					</div>
-					<input class="form-container__submit" type="submit" value="Add new task" />
+					<button class="form-container__submit">Add new task</button>
 				</form>
 			</div>
 		</div>
 		<div class="container">
-			<ul class="table-container">
+			<ul class="table-container" id="task-list">
 				<li class="table-row__header">
 					<!-- <header class="task-container__header-items"> -->
 					<p class="table-row__header__task-name">My tasks</p>
+					<p class="table-row__header__priority">Priority</p>
 					<!-- <p class="table-row__header__priority">Priority</p>
 					<p class="table-row__header__done">Done</p>
 					<p class="table-row__header__bin">Delete</p> -->
 					<!-- </header> -->
 				</li>
-
+				<!-- 
 				<li class="table-row__task-list" id="task-list" name="task-list">
-					<p class="table-row__task-list__task-name">Example task</p>
-					<p class="table-row__task-list__priority">Medium</p>
-					<p class="table-row__task-list__done">Done</p>
+					<p class="table-row__task-list__task-name"></p>
+					<p class="table-row__task-list__priority"></p>
+					<p class="table-row__task-list__done"></p>
 					<i class="fa-solid fa-trash delete" style="color: #1d1d1b"></i>
-				</li>
+				</li> -->
 			</ul>
 
 			<footer class="footer">

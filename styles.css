@@ -25,6 +25,10 @@ body {
 	min-height: 100vh;
 }
 
+button:enabled:hover {
+	cursor: pointer;
+}
+
 .app {
 	width: 20em;
 	margin: 0em auto;
@@ -71,7 +75,7 @@ ul {
 	justify-content: space-evenly;
 }
 
-.choose-priority__high {
+.priority__high {
 	background-color: var(--red);
 	color: var(--white);
 	border: none;
@@ -79,12 +83,12 @@ ul {
 	padding: 0.25em 0.75em;
 	width: 4.5em;
 }
-.choose-priority__high:active {
+.priority__high__red {
 	color: var(--black);
 	font-weight: bold;
 }
 
-.choose-priority__medium {
+.priority__medium {
 	background-color: var(--yellow);
 	color: var(--white);
 	border: none;
@@ -92,12 +96,12 @@ ul {
 	padding: 0.25em 0.75em;
 	width: 4.5em;
 }
-.choose-priority__medium:active {
+.priority__medium__yellow {
 	color: var(--black);
 	font-weight: bold;
 }
 
-.choose-priority__low {
+.priority__low {
 	background-color: var(--green);
 	color: var(--white);
 	border: none;
@@ -105,7 +109,7 @@ ul {
 	padding: 0.25em 0.75em;
 	width: 4.5em;
 }
-.choose-priority__low:active {
+.priority__low__green {
 	color: var(--black);
 	font-weight: bold;
 }
