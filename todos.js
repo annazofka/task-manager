@@ -17,7 +17,7 @@ const generateTemplate = (task, priority) => {
 	//     <li class="table-row__task-list">
 	//     <p class="table-row__task-list__task-name">${task}</p>
 	//     <p class="table-row__task-list__priority">${priority}</p>
-	// 	<p class="table-row__task-list__done"></p>
+	// 	   <p class="table-row__task-list__done"></p>
 	//     <i class="fa-solid fa-trash delete" style="color: #1d1d1b"></i>
 
 	// </li>
@@ -26,6 +26,7 @@ const generateTemplate = (task, priority) => {
 	const html = `
     <p class="table-row__task-list__task-name">${task}</p>
     <p class="table-row__task-list__priority">${priority}</p>
+	<input type="checkbox" class="table-row__task-list__done">
 	<p class="table-row__task-list__done"></p>
     <i class="fa-solid fa-trash delete" style="color: #1d1d1b"></i>
 `
@@ -50,6 +51,7 @@ addNewTask.addEventListener('submit', event => {
 		highPriorityButton.classList?.remove('priority__high__red')
 		mediumPriorityButton?.classList.remove('priority__medium__yellow')
 		lowPriorityButton?.classList.remove('priority__low__green')
+		choosePriority.reset()
 	}
 })
 

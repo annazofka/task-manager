@@ -148,14 +148,22 @@ ul {
 }
 
 .table-row__header {
-	display: inline-block;
+	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	min-width: 100%;
 	background-color: var(--blue);
 	padding: 0.6em;
 	font-size: large;
 	font-weight: 600;
+}
+
+.table-row__header__task-name {
+	width: 50%;
+}
+
+.table-row__header__priority {
+	width: 30%;
 }
 
 .table-row__header p {
@@ -165,13 +173,25 @@ ul {
 }
 
 .table-row__task-list {
-	/* display: flex;
+	display: flex;
 	flex-direction: row;
-	justify-content: space-between; */
+	justify-content: space-between;
 	min-width: 100%;
 }
 .table-row__task-list p {
 	padding: 0.4em;
+}
+
+.table-row__task-list__task-name {
+	width: 50%;
+}
+
+.table-row__task-list__priority {
+	width: 30%;
+}
+
+[class^='fa-solid fa-trash delete'] {
+	padding: 0.5em;
 }
 
 .footer-container {
